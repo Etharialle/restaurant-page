@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Starship Grunge";
+    src: url('./assets/StarshipGrunge.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: #00FF00 solid 1px;
+
+ }
+
+ body {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #5ed45e;
+    margin: 0 auto;
+    color: rgb(107, 7, 107);
+    max-width: 80rem;
+    gap: 2rem;
+    background-color: #5ed45e;
+ }
+
+ header {
+    max-height: 8rem;
+    margin: 2rem;
+ }
+ nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+ }
+ h1 {
+    font-family: "Starship Grunge";
+    font-size: 4rem;
+    text-align: center;
+ }
+ .content {
+    display: flex;
+    justify-content: center;
+ }
+.main-text {
+    display: flex;
+    justify-content: center;
+
+    max-width: 35rem;
+}
