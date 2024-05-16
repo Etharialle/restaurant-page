@@ -4,49 +4,102 @@
     font-style: normal;
     font-weight: 400;
 }
+@font-face {
+   font-family: "shire";
+   src: url(./assets/shire.ttf) format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: #00FF00 solid 1px;
+   margin: 0;
+   padding: 0;
+   /*outline: #00FF00 solid 1px;*/
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
- }
+body {
+   height: 100svh;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: flex-start;
+   /*background-color: #5ed45e;*/
+   margin: 0 auto;
+   color: rgb(247, 247, 247);
+   max-width: 80rem;
+   gap: 2rem;
+   background: url('./assets/potatoes2.jpg');
+   background-position: center;
+   background-size: cover;   
+   background-blend-mode: soft-light;
+   font-size: 1.5rem;
+}
+.lotr-bg-color {
+   background-color: rgb(82, 26, 0, 80%);
+   max-width: 80rem;
+}
+header {
+   /*max-height: 8rem;*/
+   margin: 2rem;
+   display: flex;
+   justify-content: center;
+}
+nav {
+   display: flex;
+   gap: 1rem 5rem;
+   font-size: 3rem;
+   /*background-color: #459c45;*/
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.nav-button {
+   outline: rgb(120, 161, 143) outset 4px;
+   background-color: rgb(89, 49, 57);
+}
+.nav-button:hover {
+   outline: rgb(120, 161, 143) inset 4px;
+   cursor: pointer;
+}
+.nav-button:active {
+   outline: rgb(120, 161, 143) inset 4px;
+   background-color: rgb(86, 110, 0);
+   cursor: pointer;
+}
 
- body {
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #5ed45e;
-    margin: 0 auto;
-    color: rgb(107, 7, 107);
-    max-width: 80rem;
-    gap: 2rem;
-    background-color: #5ed45e;
- }
+h1 {
+   font-family: "shire";
+   font-size: 4rem;
+   text-align: center;
 
- header {
-    max-height: 8rem;
-    margin: 2rem;
- }
- nav {
-    display: flex;
-    gap: 2rem;
-    font-size: 3rem;
- }
- h1 {
-    font-family: "Starship Grunge";
-    font-size: 4rem;
-    text-align: center;
- }
- .content {
-    display: flex;
-    justify-content: center;
- }
+}
+hr {
+   border: rgb(247, 247, 247) inset 2px;
+   
+   margin: 0 2rem;
+}
+.content {
+   display: flex;
+   justify-content: center;
+   
+}
 .main-text {
-    display: flex;
-    justify-content: center;
-
-    max-width: 35rem;
+   padding: 0 2rem;
+}
+p {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+#diner-inside {
+   content: url('./assets/purple-flower.png');
+   float: right;
+   margin: 2rem;
+}
+.footer {
+   background-color: rgb(54, 36, 22, 80%);
+   display: flex;
+   justify-content: center;
+}
+.footer > * {
+   margin: .5rem;
 }

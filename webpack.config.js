@@ -25,7 +25,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Verdant Veggie Valley',
+            //title: "Sam's Potato Diner",
             filename: 'index.html',
             template: './src/index.html',
             inject: 'head',
