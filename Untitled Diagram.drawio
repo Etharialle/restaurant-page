@@ -1,9 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2024-05-17T16:47:51.114Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.4.4" etag="jiybsR37qL2T3ZrrntYF" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-17T17:15:38.708Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="8PBfI2-qRa1VY-yExib1" version="24.4.4" type="github">
   <diagram name="Page-1" id="_XW2aRxPbvMp9jxoI3Cc">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="SFTi8-72i3KYINAuqSL5-2" value="index,js&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;import * as home&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;import * as location&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;import * as location&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;export {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;newElement (tag, classList, content)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;createDOMBody(header, content, footer);&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="460" y="270" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-3" value="home.js&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;import * as index from &#39;./index.js&#39;;&lt;/div&gt;&lt;div&gt;export {home}&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="380" y="40" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-4" value="location.js&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;import * as index from &#39;./index.js&#39;;&lt;/div&gt;&lt;div&gt;export {location}&lt;/div&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="270" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-5" value="menu.js&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;import * as index from &#39;./index.js&#39;;&lt;/div&gt;&lt;div&gt;export {menu}&lt;/div&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="390" y="490" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#F70FFF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-2" target="SFTi8-72i3KYINAuqSL5-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="285" />
+              <mxPoint x="320" y="75" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#24D3FF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-3" target="SFTi8-72i3KYINAuqSL5-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="55" />
+              <mxPoint x="360" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#F70FFF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-2" target="SFTi8-72i3KYINAuqSL5-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="285" />
+              <mxPoint x="320" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#F70FFF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-2" target="SFTi8-72i3KYINAuqSL5-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="285" />
+              <mxPoint x="320" y="240" />
+              <mxPoint x="10" y="240" />
+              <mxPoint x="10" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#24D3FF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-5" target="SFTi8-72i3KYINAuqSL5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SFTi8-72i3KYINAuqSL5-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;strokeColor=#24D3FF;strokeWidth=4;" edge="1" parent="1" source="SFTi8-72i3KYINAuqSL5-4" target="SFTi8-72i3KYINAuqSL5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
