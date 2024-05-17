@@ -73,6 +73,12 @@ h1 {
    text-align: center;
 
 }
+h2 {
+   font-family: "shire";
+   font-size: 3rem;
+   text-align: center;
+
+}
 hr {
    border: rgb(247, 247, 247) inset 2px;
    
@@ -95,6 +101,23 @@ p {
    float: right;
    margin: 2rem;
 }
+.item {
+   margin: 2rem;
+}
+.item-top {
+   display: flex;
+   justify-content: space-between;
+}
+.item-name {
+
+}
+.item-price {
+   font-weight: 600;
+}
+.item-description {
+   font-size: 1rem;
+   font-style: italic;
+}
 .footer {
    background-color: rgb(54, 36, 22, 80%);
    display: flex;
@@ -102,4 +125,10 @@ p {
 }
 .footer > * {
    margin: .5rem;
+}
+#map {
+   content: url('./assets/spd-locations.png');
+   float: right;
+   margin: 2rem;
+   max-width: 800px;
 }

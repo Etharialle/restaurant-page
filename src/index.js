@@ -1,12 +1,14 @@
 import './style.css';
 import * as home from './home.js';
+import * as menu from './menu.js';
+import * as location from './location.js';
 
 const headerArray = [
     ['header'],
     ['nav'],
-    ['div', 'nav-button test', 'Home'],
-    ['div', 'nav-button', 'Menu'],
-    ['div', 'nav-button', 'Location']
+    ['div', 'nav-button', 'Home', 'home-button'],
+    ['div', 'nav-button', 'Menu', 'menu-button'],
+    ['div', 'nav-button', 'Location', 'location-button']
 ];
 const footerArray = [
     ['footer']
@@ -27,19 +29,10 @@ function createHeader(headerArray){
         const newTag = newElement(...iterator);
         tagArray.push(newTag);
     }
-    //const headerTag = newElement(...headerArray[0]);
-    //const navTag = newElement(...headerArray[1]);
-    //const homeTag = newElement(...headerArray[2]);
-    //const menuTag = newElement(...headerArray[3]);
-    //const aboutTag = newElement(...headerArray[4]);
     tagArray[1].appendChild(tagArray[2]);
     tagArray[1].appendChild(tagArray[3]);
     tagArray[1].appendChild(tagArray[4]);
     tagArray[0].appendChild(tagArray[1]);
-    //navTag.appendChild(homeTag);
-    //navTag.appendChild(menuTag);
-    //navTag.appendChild(aboutTag);
-    //headerTag.appendChild(navTag);
     return tagArray[0];
 }
 function createFooter(footerArray) {
@@ -50,4 +43,40 @@ const header = createHeader(headerArray);
 const lotrDiv = document.querySelector(".lotr-bg-color");
 lotrDiv.appendChild(header);
 lotrDiv.appendChild(home.home);
+
+
+const buttons = document.querySelectorAll(".nav-button");
+
+for (const iterator of buttons) {
+    const container = document.querySelector("#content");
+    iterator.addEventListener("click", () => {
+        if (iterator.id === "menu-button") {
+            lotrDiv.replaceChildren();
+            lotrDiv.appendChild(header);
+            lotrDiv.appendChild(menu.menu);
+        } else if (iterator.id === "location-button") {
+            lotrDiv.replaceChildren();
+            lotrDiv.appendChild(header);
+            lotrDiv.appendChild(location.location);
+        } else {
+            lotrDiv.replaceChildren();
+            lotrDiv.appendChild(header);
+            lotrDiv.appendChild(home.home);
+        }
+        
+        /*
+        if (iterator.id === "menu-button") {
+            lotrDiv.replaceChild(menu.menu, container);
+            console.log(iterator.id);
+        } else if (iterator.id === "location-button") {
+            lotrDiv.replaceChild(location.location, container);
+            console.log(iterator.id);
+        } else {
+            lotrDiv.replaceChild(home.home, container);
+            console.log(iterator.id);
+        }
+        */
+    });
+}
+
 export {newElement};

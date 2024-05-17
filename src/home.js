@@ -17,18 +17,10 @@ const contentArray = [
 
 function createHome(contentArray) {
     let tagArray = [];
-    //for (let i = 0; i < 10; i++) {
-    //    const newTag = index.newElement(...contentArray[i]);
-    //    tagArray.push(newTag);
-    //}
     for (const iterator of contentArray) {
         const newTag = index.newElement(...iterator);
         tagArray.push(newTag);
     }
-    //contentArray.forEach((element) => {
-    //    const newTag = index.newElement(...element);
-    //    tagArray.push(newTag);
-    //});
     tagArray[3].appendChild(tagArray[4]);
     tagArray[3].appendChild(tagArray[5]);
     tagArray[3].appendChild(tagArray[6]);
