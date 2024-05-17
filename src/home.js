@@ -3,7 +3,7 @@ import * as index from './index.js';
 
 const contentArray = [
     ['div',,,'content'],
-    ['h1','test', "Sam's Potato Diner"],
+    ['h1',, "Sam's Potato Diner"],
     ['hr'],
     ['div', 'main-text'],
     ['p',,"Welcome to Sam's Potato Diner! Here, we celebrate the humble spud, taking inspiration from the legendary hobbit, Samwise Gamgee. Just like Sam kept Frodo going on their long journey with his hearty potato creations, we bring you delicious and comforting potato dishes that will satisfy every craving."],
@@ -17,14 +17,17 @@ const contentArray = [
 
 function createHome(contentArray) {
     let tagArray = [];
-    for (let i = 0; i < 10; i++) {
-        const newTag = index.newElement(...contentArray[i]);
+    //for (let i = 0; i < 10; i++) {
+    //    const newTag = index.newElement(...contentArray[i]);
+    //    tagArray.push(newTag);
+    //}
+    for (const iterator of contentArray) {
+        const newTag = index.newElement(...iterator);
         tagArray.push(newTag);
     }
     //contentArray.forEach((element) => {
-    //    const newTag = index.newElement(...contentArray[element]);
+    //    const newTag = index.newElement(...element);
     //    tagArray.push(newTag);
-    //    console.log(newTag);
     //});
     tagArray[3].appendChild(tagArray[4]);
     tagArray[3].appendChild(tagArray[5]);
